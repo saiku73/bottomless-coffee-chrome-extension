@@ -1,0 +1,217 @@
+/* Bottomless Starred Coffees Extension Styles */
+
+.btl-starred-section {
+  margin-bottom: 1.75rem;
+}
+
+.btl-starred-header {
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.btl-starred-title-wrap {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btl-heart-heading-icon {
+  color: #c33c54;
+  margin-right: 0.35rem;
+  font-size: 0.95em;
+}
+
+.btl-count-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #8f2438;
+  background-color: #fdf1f3;
+  border: 1px solid #f4cfd6;
+  letter-spacing: 0.01em;
+}
+
+.btl-header-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.btl-segmented {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f4f5f7;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  padding: 2px;
+}
+
+.btl-segmented-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #6c757d;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+  line-height: 1.3;
+}
+
+.btl-segmented-btn:hover {
+  color: #232323;
+}
+
+.btl-segmented-btn.is-active {
+  background-color: #ffffff;
+  color: #232323;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.btl-collapse-btn {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  color: #6c757d;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  line-height: 1.3;
+}
+
+.btl-collapse-btn:hover {
+  color: #232323;
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: #f8f9fa;
+}
+
+/* Starred cards inside the dedicated top section */
+.btl-starred-card-link {
+  height: 100%;
+}
+
+.btl-starred-card {
+  height: 100%;
+  border-left: 3px solid #c33c54 !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.12s ease;
+}
+
+.btl-starred-card-link:hover .btl-starred-card {
+  border-color: rgba(195, 60, 84, 0.45);
+  box-shadow: 0 3px 10px rgba(195, 60, 84, 0.08);
+}
+
+.btl-starred-thumb {
+  width: 60px;
+  max-height: 68px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.btl-starred-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.btl-inline-heart {
+  color: #c33c54;
+  font-size: 0.85em;
+  flex-shrink: 0;
+}
+
+.btl-repeat-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  background-color: #eef2ff;
+  border: 1px solid #d5e0ff;
+  white-space: nowrap;
+}
+
+.btl-note-preview {
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  color: #6c757d;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.btl-note-method {
+  font-weight: 600;
+  color: #495057;
+  margin-right: 0.3rem;
+}
+
+.btl-empty-card {
+  background-color: #fafafa;
+  border: 1px dashed rgba(0, 0, 0, 0.16);
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* History section annotations and safe CSS-only hiding (preserves React DOM tree) */
+.btl-history-meta {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.55rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #6c757d;
+  background-color: #f4f5f7;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  vertical-align: middle;
+}
+
+.btl-hidden-order,
+.btl-hidden-group {
+  display: none !important;
+}
+
+.btl-disliked-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  color: #adb5bd;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+.btl-inprogress-starred {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.4rem;
+  padding: 0.08rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8f2438;
+  background-color: #fdf1f3;
+  border: 1px solid #f4cfd6;
+  vertical-align: middle;
+}

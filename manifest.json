@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Bottomless Starred Coffees",
+  "version": "1.0.0",
+  "description": "Visually categorizes your starred (loved) coffees into a dedicated section at the top of bottomless.com/orders.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.bottomless.com/*"],
+      "js": ["src/orders-logic.js", "src/content.js"],
+      "css": ["src/styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
